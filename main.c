@@ -46,8 +46,6 @@ int probe_page(uint64_t page)
 	return detecc;
 }
 
-typedef void(__fastcall* func)();
-
 int main()
 {
 	HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -82,3 +80,4 @@ int main()
 	return 0;
 
 }
+
