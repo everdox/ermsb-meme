@@ -1,8 +1,6 @@
 #include <Windows.h>
 #include <stdint.h>
 
-uint64_t probeaddr;
-
 int handler(PEXCEPTION_POINTERS ctx)
 {
 	if (ctx->ExceptionRecord->ExceptionCode == EXCEPTION_SINGLE_STEP)
@@ -82,4 +80,5 @@ int main()
 	}
 
 	return 0;
+
 }
